@@ -271,20 +271,17 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-/* /* #hero {
+#hero {
   width: 100%;
-  height: 100vh;
-  background: url("../img/hero-bg.jpg") top right no-repeat;
-   background-size: cover; 
-  position: relative;
-} *? */
+  /* height: 130vh; */
+  /* background-color: #0678e3; */
+}
 
 /* @media (min-width: 992px) {
   #hero {
     padding-left: 160px;
   }
 } */
-
 
 #hero:before {
   content: '';
@@ -299,15 +296,14 @@ h6 {
 
 .covercontainer {
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
   position: relative;
-  
 }
 
 .covercontainer > img {
   height: 70%;
   width: 100%;
-  
+
   /* object-fit: contain; */
 }
 .imgcontainer {
@@ -316,11 +312,11 @@ h6 {
   align-items: center;
   flex-direction: column;
   position: absolute;
-  
 
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 9999;
 }
 
 .cover {
@@ -350,22 +346,6 @@ h6 {
 }
 
 /* adding coverimage */
-
-.coverimage {
-  background: url('/MyResume/assets/img/portfolio/portfolio-2.jpg') center
-    center no-repeat;
-  background-size: cover;
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-}
-
-.coverimage > img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
 
 #hero p {
   color: #45505b;
@@ -466,6 +446,7 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
